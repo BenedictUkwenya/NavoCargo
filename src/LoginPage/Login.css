@@ -12,7 +12,7 @@ body, html {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url('loginbg.png'); /* Update path to match your asset location */
+  background-image: url('/loginbg.png'); /* Update path to match your asset location */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
