@@ -1,0 +1,116 @@
+/* CustomersTable.css */
+.customers-table-container {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .customers-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .customers-table th,
+  .customers-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #f1f1f1;
+  }
+  
+  .customers-table th {
+    font-size: 14px;
+    font-weight: 500;
+    color: #666;
+    background-color: #fafafa;
+  }
+  
+  .customers-table tbody tr:hover {
+    background-color: #f9f9f9;
+  }
+  
+  .status-badge {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 500;
+    text-align: center;
+  }
+  
+  .status-badge.verified {
+    background-color: #e6f7ee;
+    color: #00c853;
+  }
+  
+  .status-badge.blocked {
+    background-color: #ffe6e6;
+    color: #ff3b30;
+  }
+  
+  .status-badge.unverified {
+    background-color: #fff5e6;
+    color: #ffb700;
+  }
+  
+  .more-actions-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    opacity: 0.7;
+  }
+  
+  .more-actions-btn:hover {
+    opacity: 1;
+  }
+  
+  .table-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-top: 1px solid #f1f1f1;
+  }
+  
+  .pagination-info {
+    font-size: 13px;
+    color: #666;
+  }
+  
+  .pagination-controls {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .pagination-btn {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #e1e1e1;
+    background-color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #666;
+  }
+  
+  .pagination-btn:hover {
+    background-color: #f6f6f6;
+  }
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .customers-table-container {
+    overflow-x: auto;
+  }
+
+  .customers-table {
+    min-width: 800px;
+  }
+
+  .table-footer {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

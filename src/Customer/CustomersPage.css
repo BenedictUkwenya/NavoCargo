@@ -1,0 +1,60 @@
+/* CustomersPage.css */
+.customers-page {
+    display: flex;
+    min-height: 100vh;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .main-content {
+    flex-grow: 1;
+    background-color: #f8f9fa;
+  }
+  
+  .content-container {
+    padding: 20px;
+  }
+  
+  .customers-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .customers-header h2 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin: 0;
+  }
+  
+  .add-customer-btn {
+    width: 35px;
+    height: 35px;
+    background-color: #ff6b00;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  .add-customer-btn:hover {
+    background-color: #e05f00;
+  }
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .customers-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .add-customer-btn {
+    align-self: flex-end;
+  }
+}
