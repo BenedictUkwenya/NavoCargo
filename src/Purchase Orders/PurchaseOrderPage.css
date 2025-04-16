@@ -1,0 +1,212 @@
+/* src/pages/PurchaseOrders/PurchaseOrdersPage.css */
+/* Using po- prefix for all class names to ensure they are scoped to this component */
+
+.app-container {
+  display: flex;
+  min-height: 100vh;
+  font-family: 'Inter', sans-serif;
+}
+
+.topbar-wrapper {
+  margin-bottom: -20px;
+  z-index: 1; /* Ensure topbar stays above other elements */
+  position: relative; /* Allow stacking context for overlap */
+}
+
+.pu-content-container {
+  flex-grow: 1;
+  background-color: #f8f9fa;
+  display: flex;
+  flex-direction: column;
+}
+
+.pu-main-content {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  background-color: #f9f9f9;
+}
+
+.po-layout {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.po-main-content {
+  display: flex;
+  flex: 1;
+}
+
+.po-content-area {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  background-color: #f9f9f9;
+}
+
+.purchase-orders-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.purchase-orders-header h1 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.sort-button {
+  width: 36px;
+  height: 36px;
+  border-radius: 4px;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.sort-icon {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.search-container {
+  position: relative;
+  flex-grow: 1;
+  max-width: 350px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px 35px 10px 15px;
+  border: 1px solid #e1e1e1;
+  border-radius: 5px;
+  font-size: 14px;
+  background-color: white;
+}
+
+.clear-search {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.po-table-container {
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.po-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.po-table th {
+  background-color: #f0f7ff;
+  padding: 12px 15px;
+  text-align: left;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.po-table td {
+  padding: 12px 15px;
+  font-size: 14px;
+  color: #333;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.po-table tbody tr:hover {
+  background-color: #f9f9f9;
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  padding: 15px;
+  border-top: 1px solid #f1f1f1;
+}
+
+.page-info {
+  font-size: 13px;
+  color: #666;
+}
+
+.page-controls {
+  display: flex;
+  gap: 10px;
+}
+
+.page-prev,
+.page-next {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #e1e1e1;
+  background-color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #666;
+}
+
+.page-prev:hover,
+.page-next:hover {
+  background-color: #f6f6f6;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .purchase-orders-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .search-container {
+    width: 100%;
+  }
+
+  .po-table-container {
+    overflow-x: auto;
+  }
+
+  .po-table {
+    min-width: 800px;
+  }
+
+  .pagination {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

@@ -1,0 +1,151 @@
+/* AuditManagement.css */
+
+.audit-management-container {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #f9f9f9;
+}
+
+.audit-management-container .main-content {
+  flex: 1;
+}
+
+.audit-management-container .audit-content {
+  padding: 20px;
+}
+
+.audit-management-container .audit-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.audit-management-container .audit-header h1 {
+  font-size: 24px;
+  color: #333;
+  margin: 0;
+}
+
+.audit-management-container .search-container {
+  position: relative;
+  width: 300px;
+}
+
+.audit-management-container .search-input {
+  width: 100%;
+  padding: 10px 30px 10px 15px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  font-size: 14px;
+  outline: none;
+}
+
+.audit-management-container .clear-search {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: #999;
+}
+
+.audit-management-container .audit-table {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.audit-management-container .table-header {
+  display: flex;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #eee;
+  padding: 15px 0;
+  font-weight: bold;
+  color: #555;
+}
+
+.audit-management-container .header-cell {
+  flex: 1;
+  padding: 0 15px;
+}
+
+.audit-management-container .table-body {
+  max-height: calc(100vh - 300px);
+  overflow-y: auto;
+}
+
+.audit-management-container .table-row {
+  display: flex;
+  border-bottom: 1px solid #eee;
+  padding: 15px 0;
+}
+
+.audit-management-container .table-row:last-child {
+  border-bottom: none;
+}
+
+.audit-management-container .table-row:hover {
+  background-color: #f9f9f9;
+}
+
+.audit-management-container .table-cell {
+  flex: 1;
+  padding: 0 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.audit-management-container .pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.audit-management-container .pagination-text {
+  color: #777;
+  font-size: 14px;
+}
+
+.audit-management-container .pagination-controls {
+  display: flex;
+  gap: 5px;
+}
+
+.audit-management-container .pagination-button {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.audit-management-container .pagination-button:hover:not(.disabled) {
+  background-color: #f5f5f5;
+}
+
+.audit-management-container .pagination-button.disabled {
+  color: #ccc;
+  cursor: not-allowed;
+}
+
+/* For the audit table color scheme */
+.audit-management-container .table-row:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+.audit-management-container .table-row:nth-child(even) {
+  background-color: #f8f8f8;
+}
