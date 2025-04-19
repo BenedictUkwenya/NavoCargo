@@ -1,7 +1,7 @@
 import React from 'react';
 import './Dashboard.css';
 import Sidebar from '../Customer/SideBar';
-import Topbar from '../Customer/Topbar'; // Ensure this path is correct and the Topbar component exists
+import Topbar from '../Customer/TopBar'; // Ensure this path is correct and the Topbar component exists
 
 const Dashboard = () => {
   return (
