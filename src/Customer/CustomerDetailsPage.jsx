@@ -11,7 +11,7 @@ const CustomerDetailPage = () => {
     name: 'Oladapo Koiki',
     image: '/userprofile.png',
     contact: {
-      phoneNGN: '+234 802 938 6768',
+      phoneNGN: '+234 802 938 6763',
       phoneUK: '+44 079 7631 7010',
       email: 'okoiki@gmail.com',
       gender: 'Male'
