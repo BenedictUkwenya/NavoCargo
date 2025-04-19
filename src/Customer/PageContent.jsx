@@ -9,7 +9,7 @@ const CustomersPage = () => {
   // Mock data for customers table
   const customers = [
     { id: '4753528', name: 'Oladapo Koiki', phone: '08023587768', email: 'ola-k@gmail.com', dateCreated: '03/03/2025', status: 'Verified' },
-    { id: '4753528', name: 'Oladapo Koiki', phone: '08023587768', email: 'ola-k@gmail.com', dateCreated: '03/03/2025', status: 'Blocked' },
+    { id: '4753528', name: 'Oladapo Koiki', phone: '08043587768', email: 'ola-k@gmail.com', dateCreated: '03/03/2025', status: 'Blocked' },
     { id: '4753528', name: 'Oladapo Koiki', phone: '08023587768', email: 'ola-k@gmail.com', dateCreated: '03/03/2025', status: 'Blocked' },
     { id: '4753528', name: 'Oladapo Koiki', phone: '08023587768', email: 'ola-k@gmail.com', dateCreated: '03/03/2025', status: 'Unverified' },
     { id: '4753528', name: 'Oladapo Koiki', phone: '08023587768', email: 'ola-k@gmail.com', dateCreated: '03/03/2025', status: 'Blocked' },

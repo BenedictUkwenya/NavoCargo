@@ -1,4 +1,3 @@
-// src/pages/PurchaseOrders/PurchaseOrdersPage.jsx
 import React, { useState } from 'react';
 
 import PurchaseOrdersTable from './PurchaseOrderTable';
@@ -9,9 +8,9 @@ import Sidebar from '../Customer/SideBar';
 const PurchaseOrdersPage = () => {
   // Sample data for the table
   const [orders, setOrders] = useState([
-    { userId: '476328', name: 'Oladapo Koiki', email: 'okoiki@gmail.com', phone: '08029386768', country: 'Nigeria', category: 'Groceries', quantity: 50, status: 'Request' },
+    { userId: '476328', name: 'Oladapo Koiki', email: 'okoiki@gmail.com', phone: '08129386768', country: 'Nigeria', category: 'Groceries', quantity: 50, status: 'Request' },
     { userId: '476328', name: 'Oladapo Koiki', email: 'okoiki@gmail.com', phone: '08029386768', country: 'United Kingdom', category: 'Groceries', quantity: 50, status: 'Delivered' },
-    { userId: '476328', name: 'Oladapo Koiki', email: 'okoiki@gmail.com', phone: '08029386768', country: 'Nigeria', category: 'Groceries', quantity: 50, status: 'Request' },
+    { userId: '476328', name: 'Oladapo Koiki', email: 'okoiki@gmail.com', phone: '0802938e768', country: 'Nigeria', category: 'Groceries', quantity: 50, status: 'Request' },
     { userId: '476328', name: 'Oladapo Koiki', email: 'okoiki@gmail.com', phone: '08029386768', country: 'United Kingdom', category: 'Groceries', quantity: 50, status: 'Request' },
     { userId: '476328', name: 'Oladapo Koiki', email: 'okoiki@gmail.com', phone: '08029386768', country: 'Nigeria', category: 'Groceries', quantity: 50, status: 'Request' },
     { userId: '476328', name: 'Oladapo Koiki', email: 'okoiki@gmail.com', phone: '08029386768', country: 'United Kingdom', category: 'Groceries', quantity: 50, status: 'Parcel Packed' },
@@ -46,7 +45,7 @@ const PurchaseOrdersPage = () => {
           </div>
           <PurchaseOrdersTable orders={orders} />
           <div className="pagination">
-            <span className="page-info">Showing 1-09 of 78</span>
+            <span className="page-info">Showing 1-08 of 78</span>
             <div className="page-controls">
               <button className="page-prev">
                 <i className="prev-icon"></i>
