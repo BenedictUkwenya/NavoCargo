@@ -4,18 +4,18 @@ import { NavLink } from 'react-router-dom';
 
 const Sidebar = () => {
   const sidebarItems = [
-    { id: 'dashboard', name: 'Dashboard', icon: '📊' },
-    { id: 'customers', name: 'Customers', icon: '👥' },
-    { id: 'shipments', name: 'Shipments', icon: '📦' },
-    { id: 'quote', name: 'Quote Request', icon: '💬' },
-    { id: 'tracking', name: 'Tracking Mgt.', icon: '🔍' },
-    { id: 'purchase', name: 'Purchase Orders', icon: '🛒' },
-    { id: 'transaction', name: 'Transaction', icon: '💰' },
-    { id: 'support', name: 'Support Ticket', icon: '🎫' },
-    { id: 'audit', name: 'Audit Mgt.', icon: '📝' },
-    { id: 'user', name: 'User Mgt.', icon: '👤' },
-    { id: 'settings', name: 'Settings', icon: '⚙️' },
-    { id: 'logout', name: 'Logout', icon: '🚪' }
+    { id: 'dashboard', name: 'Dashboard', icon: 'dashboardicon.png' },
+    { id: 'customers', name: 'Customers', icon: 'customers.png' },
+    { id: 'shipments', name: 'Shipments', icon: 'shipment-icon.png' },
+    { id: 'quote', name: 'Quote Request', icon: 'quote-icon.png' },
+    { id: 'tracking', name: 'Tracking Mgt.', icon: 'trackingicon.png' },
+    { id: 'purchase', name: 'Purchase Orders', icon: 'purchaseicon.png' },
+    { id: 'transaction', name: 'Transaction', icon: 'transactionicon.png' },
+    { id: 'support', name: 'Support Ticket', icon: 'support.png' },
+    { id: 'audit', name: 'Audit Mgt.', icon: 'usermgt.png' },
+    { id: 'user', name: 'User Mgt.', icon: 'usermagg.png' },
+    { id: 'settings', name: 'Settings', icon: 'settings.png' },
+    { id: 'logout', name: 'Logout', icon: 'logoutIcon.png' }
   ];
 
   return (
@@ -33,7 +33,14 @@ const Sidebar = () => {
                   `sidebar-link ${isActive ? 'active' : ''}`
                 }
               >
-                <span className="icon">{item.icon}</span>
+                <span className="icon">
+  {item.icon.endsWith('.png') ? (
+    <img src={`/${item.icon}`} alt={item.name} width="20" height="20" />
+  ) : (
+    item.icon
+  )}
+</span>
+
                 <span className="text">{item.name}</span>
               </NavLink>
             </li>

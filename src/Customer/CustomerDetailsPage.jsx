@@ -1,7 +1,7 @@
 // CustomerDetailPage.jsx
 import React, { useState } from 'react';
 import './CustomerDetailPage.css';
-import Topbar from './TopBar';
+import Topbar from './Topbar';
 import Sidebar from './SideBar';
 
 const CustomerDetailPage = () => {
@@ -142,19 +142,19 @@ return (
                         
                         {activeTab === 'Wallet Balance' && (
                             <div className="wallet-balance">
-                                <p>Wallet balance information will be displayed here.</p>
+                                <p>omoooo.</p>
                             </div>
                         )}
                         
                         {activeTab === 'Shipments' && (
                             <div className="shipments">
-                                <p>Shipment history will be displayed here.</p>
+                                <p>omooooooo.</p>
                             </div>
                         )}
                         
                         {activeTab === 'Referral' && (
                             <div className="referral">
-                                <p>Referral information will be displayed here.</p>
+                                <p>omoooooooo.</p>
                             </div>
                         )}
                     </div>

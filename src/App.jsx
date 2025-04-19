@@ -12,6 +12,7 @@ import TransactionPage from './TracsactionPage/TracsactionPage';
 import SupportTicketPage from './SupportTickket/SupportTicket';
 import AuditManagement from './Audit Managent/Audit';
 import Settings from './Settings/Settings';
+import UserManagement from './UserManagement/UserManagement';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
         <Route path='/support' element={<SupportTicketPage />} />
         <Route path='/audit' element={<AuditManagement />} />
         <Route path='/settings' element={<Settings />} />
+        <Route path='/user' element={<UserManagement />} />
         <Route path="/" element={<Navigate to="/login" />} />
         {/* Add other routes as needed */}
       </Routes>
