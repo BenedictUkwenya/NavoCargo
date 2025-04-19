@@ -35,7 +35,7 @@ const Dashboard = () => {
               <div className="stat-info">
                 <p className="stat-title">Total Customers</p>
                 <div className="stat-percentage">
-                  <span className="percentage">+15%</span>
+                  <span className="percentage">+16%</span>
                 </div>
                 <h2 className="stat-value">25</h2>
               </div>
