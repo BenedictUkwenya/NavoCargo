@@ -57,7 +57,7 @@ const UserManagement = () => {
                 className={`tab ${activeTab === 'permissions' ? 'active' : ''}`}
                 onClick={() => setActiveTab('permissions')}
               >
-                Permissions
+                Permission
               </div>
             </div>
             <div className="search-container">
