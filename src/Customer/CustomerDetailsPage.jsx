@@ -7,7 +7,6 @@ import Sidebar from './SideBar';
 const CustomerDetailPage = () => {
   const [activeTab, setActiveTab] = useState('Personal Details');
   
-  // Sample customer data
   const customer = {
     name: 'Oladapo Koiki',
     image: '/userprofile.png',
