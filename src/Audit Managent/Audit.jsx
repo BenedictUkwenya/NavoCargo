@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import './AuditManagement.css';
 import Sidebar from '../Customer/SideBar'; // Adjust path as needed
-import Topbar from '../Customer/TopBar';
+import Topbar from '../Customer/Topbar';
 
 const AuditManagement = () => {
   const [auditLogs, setAuditLogs] = useState([

@@ -1,7 +1,7 @@
 // CustomersPage.jsx
 import React, { useState } from 'react';
 import './CustomersPage.css';
-import Topbar from './TopBar';
+import Topbar from './Topbar';
 import Sidebar from './SideBar';
 import CustomersTable from './CustomerTable';
 

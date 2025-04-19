@@ -1,7 +1,7 @@
 // QuoteRequestPage.jsx
 import React from 'react';
 import './QuoteRequestPage.css';
-import Topbar from '../Customer/TopBar';
+import Topbar from '../Customer/Topbar';
 import Sidebar from '../Customer/SideBar';
 
 

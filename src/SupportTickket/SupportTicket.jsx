@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import './SupportTicketPage.css';
 import Sidebar from '../Customer/SideBar';
-import Topbar from '../Customer/TopBar';
+import Topbar from '../Customer/Topbar';
 import { FiEye } from 'react-icons/fi'; // For eye icon
 
 const SupportTicketPage = () => {

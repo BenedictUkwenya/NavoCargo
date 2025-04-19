@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 
 import PurchaseOrdersTable from './PurchaseOrderTable';
 import './PurchaseOrderPage.css';
-import Topbar from '../Customer/TopBar';
+import Topbar from '../Customer/Topbar';
 import Sidebar from '../Customer/SideBar';
 
 const PurchaseOrdersPage = () => {
