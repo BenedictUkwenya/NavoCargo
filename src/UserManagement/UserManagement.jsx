@@ -77,9 +77,3 @@ const UserManagement = () => {
 };
 
 export default UserManagement;
-
-// src/pages/UserManagement/components/ProfileTab.jsx
-
-// src/pages/UserManagement/components/RolesTab.jsx
-
-// src/pages/UserManagement/components/PermissionsTab.jsx
