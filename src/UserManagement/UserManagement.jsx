@@ -1,7 +1,7 @@
 // src/pages/UserManagement/UserManagement.jsx
 import React, { useState } from 'react';
 import Sidebar from '../Customer/SideBar';
-import Topbar from '../Customer/Topbar';
+import Topbar from '../Customer/TopBar';
 import ProfileTab from './ProfileTab';
 import UsersTab from './UserTab';
 import RolesTab from './RoleTab';

@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import './TransactionPage.css';
 import Sidebar from '../Customer/SideBar';// Adjust path as needed
-import Topbar from '../Customer/Topbar'; // Adjust path as needed
+import Topbar from '../Customer/TopBar'; // Adjust path as needed
 import { FiEye } from 'react-icons/fi'; // For eye icon
 
 const TransactionPage = () => {

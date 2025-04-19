@@ -1,7 +1,7 @@
 // CustomerDetailPage.jsx
 import React, { useState } from 'react';
 import './CustomerDetailPage.css';
-import Topbar from './Topbar';
+import Topbar from './TopBar';
 import Sidebar from './SideBar';
 
 const CustomerDetailPage = () => {

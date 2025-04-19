@@ -2,7 +2,7 @@
 import React from 'react';
 import './Settings.css';
 import Sidebar from '../Customer/SideBar';
-import Topbar from '../Customer/Topbar';
+import Topbar from '../Customer/TopBar';
 
 const Settings = () => {
   // Define the settings cards with their specific colors
